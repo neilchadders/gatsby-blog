@@ -19,3 +19,8 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
     })
   }
 }
+
+export.createPages = ({ graphql, actions }) => {
+  const { createPage } = actions
+  return graphql(` `)
+}
